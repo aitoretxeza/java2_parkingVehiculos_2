@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Parking Vehículos</title>
+</head>
+<body>
+	<h1>PARKING VEHÍCULOS</h1>
+	<hr>
+	<h2>Mostrar vehículos</h2>
+	<form method="POST" action="MostrarVehiculos">
+		<input type="submit" value="Mostrar">
+	</form>
+	<hr>
+	<h2>Buscar vehículos</h2>
+	<form method="POST" action="BuscarVehiculos">
+		Matrícula <input type="text" name="matricula" value=""><br/>
+		<input type="submit" value="Buscar">
+	</form>
+	<hr>
+	<h2>Añadir vehículos</h2>
+	<form method="POST" action="AnadirVehiculos">
+		Número de ruedas <input type="text" name="numRuedas" value=""><br/>
+		Tiene motor 
+			<input name="motor" type="radio"  value="true"> Sí
+			<input name="motor" type="radio"  value="false"> No <br/>
+		Marca <input type="text" name="marca" value=""><br/>		
+		Es automático		
+			<input name="automatico" type="radio"  value="true"> Sí
+			<input name="automatico" type="radio"  value="false"> No <br/>
+		Consumo 100Km <input type="text" name="cosumo100km" value=""><br/>
+		<input type="button" value="Añadir">
+	</form>
+	<hr>
+	<h2>Eliminar vehículos</h2>
+	<form method="POST" action="EliminarVehiculos">
+		Matrícula <input type="text" name="matricula" value=""><br/>
+		<input type="submit" value="Eliminar">
+	</form>
+</body>
+</html>
